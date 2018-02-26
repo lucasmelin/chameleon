@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+
 import { withRouter } from 'react-router';
 
 import { withTracker } from 'meteor/react-meteor-data';
@@ -171,39 +172,22 @@ class LoadFile extends Component {
 
 
 const Root = (props) => (
-  <div style={{
-    display: 'flex'
-  }} {...props} ></div>
+  <div className="root" {...props} ></div>
 )
 
 
 const Sidebar = (props) => (
-  <div style={{
-    width: '33vw',
-    height: '100vh',
-    overflow: 'auto',
-    background: '#eee'
-  }} {...props} ></div>
+  <div className="sidebar" {...props} ></div>
 )
 
 const SidebarItem = (props) => (
-  <div style={{
-    whiteSpace: 'nowrap',
-    textOverflow: 'ellipsis',
-    overflow: 'hidden',
-    padding: '5px 10px'
-  }} {...props}></div>
-
+  <div className="sidebar-item" {...props}></div>
 )
 
 
 const Main = (props) => (
-  <div style={{
-    flex: 1,
-    height: '100vh',
-    overflow: 'auto'
-  }} >
-    <div style={{ padding: '20px' }} {...props}></div>
+  <div className="main-outer">
+    <div className="main-inner"{...props}></div>
   </div>
 )
 

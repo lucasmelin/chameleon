@@ -1,0 +1,130 @@
+$cham4: rgb(44, 114, 44);
+$cham3: rgb(81, 156, 81);
+$cham3o: rgba(81, 156, 81, 0.493);
+$cham2: rgb(150, 202, 150);
+$cham1: rgb(219, 250, 219);
+
+html, body, .root {
+    height: 100%;
+    background-color: $cham2;
+}
+
+.root {
+    display: flex;
+    // background-color: red;
+}
+
+.sidebar {
+    width: 33vw;
+    height: 100vh;
+    overflow: auto;
+    background: #eee;
+}
+
+.sidebar-item {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px 10px;
+}
+
+.main-inner {
+    padding: 4rem 3rem;
+    text-align: center;
+    margin: 2rem;
+    // border: 1px solid black;
+}
+
+.main-outer {
+    flex: 1;
+    height: 100vh;
+    overflow: auto;
+    margin: 0;
+}
+
+.frame-title {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Comment-date {
+    margin-bottom: 1rem;
+}
+
+.Situation textarea {
+    margin: 1rem 0;
+    border-radius: 10px;
+    border-color: none;
+    border-style: hidden;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    resize: vertical;
+    width: 70%;
+    background-color: $cham1;
+}
+
+.main-inner a {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-color: $cham3;
+    width: 5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    color: $cham1;
+    border-radius: 5px;
+}
+
+.Mood table {
+    border: none;
+    margin: 2rem auto;
+    width: 50%;
+}
+
+.Mood td {
+    padding: 0.7rem 0;
+}
+
+.bx--responsive-table-container, .bx--responsive-table, table, tbody, tr, td {
+    background-color: $cham2;
+}
+
+.bx--number {
+    height: 100%;
+    text-align: center;
+    width: 9rem;
+    margin: 0 auto;
+    background-color: $cham3o;
+}
+
+.up-icon path {
+    background-color: $cham3;
+    fill: $cham4;
+}
+
+.down-icon path {
+    fill: $cham4;
+}
+
+.bx--label {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.Mood input[type=text] {
+    height: 100%;
+    margin: 0;
+    background-color: $cham1;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 0;
+}
+
+#tj-input {
+    width: 4rem;
+}
